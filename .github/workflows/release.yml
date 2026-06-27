@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build addon package
+        run: |
+          mkdir -p package/LIFT
+          cp LIFT.toc package/LIFT/
+          cp LIFT.lua package/LIFT/
+          cd package
+          zip -r ../LIFT.zip LIFT
+
+      - name: Upload package artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LIFT
+          path: LIFT.zip
+
+      - name: Publish GitHub release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: LIFT.zip
