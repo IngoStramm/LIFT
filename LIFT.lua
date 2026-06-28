@@ -4,7 +4,7 @@ local Lift = CreateFrame("Frame")
 local DB
 
 local FRAME_DEFS = {
-    { key = "character", label = "Character Frame", names = { "CharacterFrame" } },
+    { key = "character", label = "Character Frame", names = { "CharacterFrame" }, dragSources = { "PVPFrame", "HonorFrame" } },
     { key = "spellbook", label = "Spellbook", names = { "SpellBookFrame" } },
     { key = "talent", label = "Talent Frame", names = { "PlayerTalentFrame", "TalentFrame" } },
     { key = "questlog", label = "Quest Log", names = { "QuestLogFrame" } },
@@ -248,6 +248,7 @@ local function MakeDraggable(frame, def)
             self:EnableMouse(true)
             self:RegisterForDrag("LeftButton")
         end)
+        HookDragSources(self, def, key)
         ApplyPosition(self, key)
     end)
 
