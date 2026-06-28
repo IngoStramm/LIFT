@@ -12,7 +12,6 @@ local FRAME_DEFS = {
     { key = "gossip", label = "NPC Dialogue", names = { "GossipFrame" } },
     { key = "friends", label = "Social/Friends", names = { "FriendsFrame" } },
     { key = "guild", label = "Guild", names = { "GuildFrame", "CommunitiesFrame" } },
-    { key = "pvp", label = "PvP/Honor", names = { "PVPFrame", "HonorFrame" } },
     { key = "lfg", label = "LFG", names = { "LFGParentFrame", "LFGFrame", "LookingForGroupFrame" } },
     { key = "help", label = "Help/GM Ticket", names = { "HelpFrame", "GMChatStatusFrame" } },
     { key = "tradeskill", label = "TradeSkill/Crafting", names = { "TradeSkillFrame", "CraftFrame" } },

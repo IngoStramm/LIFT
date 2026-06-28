@@ -52,7 +52,6 @@ LIFT attempts to support these Blizzard windows when they exist in the client:
 - NPC Dialogue
 - Social/Friends
 - Guild
-- PvP/Honor
 - LFG
 - Help/GM ticket
 - TradeSkill/Crafting
