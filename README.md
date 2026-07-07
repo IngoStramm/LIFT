@@ -9,7 +9,7 @@ It is intentionally narrow in scope: it does not move unit frames, action bars, 
 ## Compatibility
 
 - World of Warcraft Classic TBC Anniversary
-- Interface version: `20505`
+- Interface version: `20506`
 
 ## Installation
 
