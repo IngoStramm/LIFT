@@ -1,9 +1,9 @@
-## Interface: 20505
+## Interface: 20506
 ## Title: LIFT
 ## Notes: Makes selected Blizzard interface windows draggable and remembers their positions.
 ## Notes-ptBR: Torna algumas janelas padrao da Blizzard arrastaveis e salva suas posicoes.
 ## Author: Ingo Stramm
-## Version: 1.0.2
+## Version: 1.0.3
 ## SavedVariables: LIFTDB
 
 LIFT.lua
